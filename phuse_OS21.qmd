@@ -19,12 +19,18 @@ format:
 
 ## Motivation {background-image="images/standard_slide.png"} 
 
+::: {.fragment .fade-up}
 - Organizations have standards
     - Changing might not be an option
     - You probably have to deviate, with high amounts of nuance
+:::
+::: {.fragment .fade-up}
 - CROs may have to work with many different standards standards
+:::
+::: {.fragment .fade-up}
 - Reuse and repeatability of configurations is still critical
     - Changing those configurations needs to be easy
+:::
 
 ## Some History {background-image="images/standard_slide.png" .smaller} 
 
@@ -49,16 +55,24 @@ format:
 
 ## Introducing **{clinify}** {background-image="images/standard_slide.png"} 
 
+::: {.fragment .fade-up}
 - Built on top of {flextable} and {officer}
+:::
+::: {.fragment .fade-up}
 - Chose these packages because:
   - Offers most of the functionality we already want
   - Treat docx files as a first class output
   - With {officer}, can also highly customize the document and not just the table
+:::
 
 ## Design Philosophy  {background-image="images/standard_slide.png"} 
 
+::: {.fragment .fade-up}
 - **{clinify}** objects should inherit from an underlying {flextable} or {officer} object
+:::
+::: {.fragment .fade-up}
 - **{clinify}** functionality must not interfere with {flextable} or {officer} functionality, i.e. {flextable} or {officer} functions called should operate without error. 
+:::
 
 ## {.center auto-animate=true background-image="images/standard_slide.png"}
 
@@ -231,7 +245,7 @@ ct
   - Proportional to respective page
 :::
 
-## {auto-animate=true background-image="images/standard_slide.png"}
+## {.center auto-animate=true background-image="images/standard_slide.png"}
 
 ```{.r code-line-numbers="4-12"}
 ct <- clintable(dat2) |> 

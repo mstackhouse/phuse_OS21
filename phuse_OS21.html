@@ -399,18 +399,28 @@
 </section>
 <section id="motivation" class="slide level2" data-background-image="images/standard_slide.png">
 <h2>Motivation</h2>
+<div class="fragment fade-up">
 <ul>
 <li>Organizations have standards
 <ul>
 <li>Changing might not be an option</li>
 <li>You probably have to deviate, with high amounts of nuance</li>
 </ul></li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
 <li>CROs may have to work with many different standards standards</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
 <li>Reuse and repeatability of configurations is still critical
 <ul>
 <li>Changing those configurations needs to be easy</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="some-history" class="slide level2 smaller" data-background-image="images/standard_slide.png">
 <h2>Some History</h2>
@@ -445,8 +455,13 @@
 </section>
 <section id="introducing-clinify" class="slide level2" data-background-image="images/standard_slide.png">
 <h2>Introducing <strong>{clinify}</strong></h2>
+<div class="fragment fade-up">
 <ul>
 <li>Built on top of {flextable} and {officer}</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
 <li>Chose these packages because:
 <ul>
 <li>Offers most of the functionality we already want</li>
@@ -454,13 +469,20 @@
 <li>With {officer}, can also highly customize the document and not just the table</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="design-philosophy" class="slide level2" data-background-image="images/standard_slide.png">
 <h2>Design Philosophy</h2>
+<div class="fragment fade-up">
 <ul>
 <li><strong>{clinify}</strong> objects should inherit from an underlying {flextable} or {officer} object</li>
+</ul>
+</div>
+<div class="fragment fade-up">
+<ul>
 <li><strong>{clinify}</strong> functionality must not interfere with {flextable} or {officer} functionality, i.e.&nbsp;{flextable} or {officer} functions called should operate without error.</li>
 </ul>
+</div>
 </section>
 <section id="section" class="slide level2 center" data-auto-animate="true" data-background-image="images/standard_slide.png">
 <h2 data-id="quarto-animate-title"></h2>
@@ -636,7 +658,7 @@
 </ul>
 </div>
 </section>
-<section id="section-9" class="slide level2" data-auto-animate="true" data-background-image="images/standard_slide.png">
+<section id="section-9" class="slide level2 center" data-auto-animate="true" data-background-image="images/standard_slide.png">
 <h2 data-id="quarto-animate-title"></h2>
 <div class="sourceCode" id="cb8" data-code-line-numbers="4-12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href=""></a>ct <span class="ot">&lt;-</span> <span class="fu">clintable</span>(dat2) <span class="sc">|&gt;</span> </span>
 <span id="cb8-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_page_by</span>(<span class="st">'page'</span>) <span class="sc">|&gt;</span> </span>
