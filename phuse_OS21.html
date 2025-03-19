@@ -410,7 +410,7 @@
 </div>
 <div class="fragment fade-up">
 <ul>
-<li>CROs may have to work with many different standards standards</li>
+<li>CROs may have to work with many different standards</li>
 </ul>
 </div>
 <div class="fragment fade-up">
@@ -480,7 +480,7 @@
 </div>
 <div class="fragment fade-up">
 <ul>
-<li><strong>{clinify}</strong> functionality must not interfere with {flextable} or {officer} functionality, i.e.&nbsp;{flextable} or {officer} functions called should operate without error.</li>
+<li><strong>{clinify}</strong> functionality must not interfere with {flextable} or {officer} functionality, i.e.&nbsp;{flextable} or {officer} functions called should operate without error</li>
 </ul>
 </div>
 </section>
@@ -764,38 +764,38 @@
 </ul></li>
 </ul>
 </section>
-<section id="tying-it-all-together" class="slide level2 center">
-<h2>Tying it All Together</h2>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="co"># Create a basic table</span></span>
-<span id="cb12-2"><a href=""></a>ct <span class="ot">&lt;-</span> <span class="fu">clintable</span>(dat2) <span class="sc">|&gt;</span> </span>
-<span id="cb12-3"><a href=""></a>  <span class="fu">clin_page_by</span>(<span class="st">'page'</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb12-4"><a href=""></a>  <span class="fu">clin_group_by</span>(<span class="fu">c</span>(<span class="st">'groups1'</span>, <span class="st">'groups2'</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb12-5"><a href=""></a>  <span class="fu">clin_alt_pages</span>(</span>
-<span id="cb12-6"><a href=""></a>    <span class="at">key_cols =</span> <span class="fu">c</span>(<span class="st">'mpg'</span>, <span class="st">'cyl'</span>, <span class="st">'hp'</span>),</span>
-<span id="cb12-7"><a href=""></a>    <span class="at">col_groups =</span> <span class="fu">list</span>(</span>
-<span id="cb12-8"><a href=""></a>      <span class="fu">c</span>(<span class="st">'disp'</span>, <span class="st">'drat'</span>, <span class="st">'wt'</span>),</span>
-<span id="cb12-9"><a href=""></a>      <span class="fu">c</span>(<span class="st">'qsec'</span>, <span class="st">'vs'</span>, <span class="st">'am'</span>),</span>
-<span id="cb12-10"><a href=""></a>      <span class="fu">c</span>(<span class="st">'gear'</span>, <span class="st">'carb'</span>)</span>
-<span id="cb12-11"><a href=""></a>    ) </span>
-<span id="cb12-12"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb12-13"><a href=""></a>  <span class="fu">clin_col_widths</span>(<span class="at">mpg =</span> .<span class="dv">2</span>, <span class="at">cyl=</span>.<span class="dv">2</span>, <span class="at">disp=</span>.<span class="dv">15</span>, <span class="at">vs=</span>.<span class="dv">15</span>) <span class="sc">|&gt;</span></span>
-<span id="cb12-14"><a href=""></a>  <span class="fu">clin_add_titles</span>(</span>
-<span id="cb12-15"><a href=""></a>    <span class="fu">list</span>(</span>
-<span id="cb12-16"><a href=""></a>      <span class="fu">c</span>(<span class="st">"Left"</span>, <span class="st">"Center"</span>, <span class="st">"Right"</span>),</span>
-<span id="cb12-17"><a href=""></a>      <span class="fu">c</span>(<span class="st">"Just the middle"</span>)</span>
-<span id="cb12-18"><a href=""></a>    )</span>
-<span id="cb12-19"><a href=""></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb12-20"><a href=""></a>  <span class="fu">clin_add_footnotes</span>(</span>
-<span id="cb12-21"><a href=""></a>      <span class="fu">list</span>(</span>
-<span id="cb12-22"><a href=""></a>        <span class="fu">c</span>(</span>
-<span id="cb12-23"><a href=""></a>          <span class="st">"Here's a footnote."</span>, </span>
-<span id="cb12-24"><a href=""></a>          <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%H:%M %A, %B %d, %Y"</span>)</span>
-<span id="cb12-25"><a href=""></a>        )</span>
-<span id="cb12-26"><a href=""></a>      )</span>
-<span id="cb12-27"><a href=""></a>    )</span>
-<span id="cb12-28"><a href=""></a></span>
-<span id="cb12-29"><a href=""></a>ct</span>
-<span id="cb12-30"><a href=""></a><span class="fu">write_clintable</span>(ct, <span class="at">file=</span><span class="st">"example_table.docx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="tying-it-all-together" class="slide level2 center" data-auto-animate="true" data-background-image="images/standard_slide.png">
+<h2 data-id="quarto-animate-title">Tying it All Together</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href=""></a><span class="co"># Create a basic table</span></span>
+<span id="cb12-2" class="hljs-ln-code"><a href=""></a>ct <span class="ot">&lt;-</span> <span class="fu">clintable</span>(dat2) <span class="sc">|&gt;</span> </span>
+<span id="cb12-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_page_by</span>(<span class="st">'page'</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb12-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_group_by</span>(<span class="fu">c</span>(<span class="st">'groups1'</span>, <span class="st">'groups2'</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-5" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_alt_pages</span>(</span>
+<span id="cb12-6" class="hljs-ln-code"><a href=""></a>    <span class="at">key_cols =</span> <span class="fu">c</span>(<span class="st">'mpg'</span>, <span class="st">'cyl'</span>, <span class="st">'hp'</span>),</span>
+<span id="cb12-7" class="hljs-ln-code"><a href=""></a>    <span class="at">col_groups =</span> <span class="fu">list</span>(</span>
+<span id="cb12-8" class="hljs-ln-code"><a href=""></a>      <span class="fu">c</span>(<span class="st">'disp'</span>, <span class="st">'drat'</span>, <span class="st">'wt'</span>),</span>
+<span id="cb12-9" class="hljs-ln-code"><a href=""></a>      <span class="fu">c</span>(<span class="st">'qsec'</span>, <span class="st">'vs'</span>, <span class="st">'am'</span>),</span>
+<span id="cb12-10" class="hljs-ln-code"><a href=""></a>      <span class="fu">c</span>(<span class="st">'gear'</span>, <span class="st">'carb'</span>)</span>
+<span id="cb12-11" class="hljs-ln-code"><a href=""></a>    ) </span>
+<span id="cb12-12" class="hljs-ln-code"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb12-13" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_col_widths</span>(<span class="at">mpg =</span> .<span class="dv">2</span>, <span class="at">cyl=</span>.<span class="dv">2</span>, <span class="at">disp=</span>.<span class="dv">15</span>, <span class="at">vs=</span>.<span class="dv">15</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-14" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_add_titles</span>(</span>
+<span id="cb12-15" class="hljs-ln-code"><a href=""></a>    <span class="fu">list</span>(</span>
+<span id="cb12-16" class="hljs-ln-code"><a href=""></a>      <span class="fu">c</span>(<span class="st">"Left"</span>, <span class="st">"Center"</span>, <span class="st">"Right"</span>),</span>
+<span id="cb12-17" class="hljs-ln-code"><a href=""></a>      <span class="fu">c</span>(<span class="st">"Just the middle"</span>)</span>
+<span id="cb12-18" class="hljs-ln-code"><a href=""></a>    )</span>
+<span id="cb12-19" class="hljs-ln-code"><a href=""></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb12-20" class="hljs-ln-code"><a href=""></a>  <span class="fu">clin_add_footnotes</span>(</span>
+<span id="cb12-21" class="hljs-ln-code"><a href=""></a>      <span class="fu">list</span>(</span>
+<span id="cb12-22" class="hljs-ln-code"><a href=""></a>        <span class="fu">c</span>(</span>
+<span id="cb12-23" class="hljs-ln-code"><a href=""></a>          <span class="st">"Here's a footnote."</span>, </span>
+<span id="cb12-24" class="hljs-ln-code"><a href=""></a>          <span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"%H:%M %A, %B %d, %Y"</span>)</span>
+<span id="cb12-25" class="hljs-ln-code"><a href=""></a>        )</span>
+<span id="cb12-26" class="hljs-ln-code"><a href=""></a>      )</span>
+<span id="cb12-27" class="hljs-ln-code"><a href=""></a>    )</span>
+<span id="cb12-28" class="hljs-ln-code"><a href=""></a></span>
+<span id="cb12-29" class="hljs-ln-code"><a href=""></a>ct</span>
+<span id="cb12-30" class="hljs-ln-code"><a href=""></a><span class="fu">write_clintable</span>(ct, <span class="at">file=</span><span class="st">"example_table.docx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="section-16" class="slide level2 center" data-auto-animate="true" data-background-image="images/standard_slide.png">
 <h2 data-id="quarto-animate-title"></h2>
@@ -805,8 +805,8 @@
 <h2 data-id="quarto-animate-title"></h2>
 
 <img data-src="./images/clinify8.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="key-ideas" class="slide level2">
-<h2>Key Ideas</h2>
+<section id="key-ideas" class="slide level2 center" data-auto-animate="true" data-background-image="images/standard_slide.png">
+<h2 data-id="quarto-animate-title">Key Ideas</h2>
 <div class="fragment fade-up">
 <ul>
 <li><strong>{clinify}</strong> works as an extension of the {flextable} and {officer} packages to help with clinical reporting</li>
